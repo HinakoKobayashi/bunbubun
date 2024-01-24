@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'welcome/index'
-  # 利用者用
+  # 利用者用 新規登録・ログイン
   devise_for :user, controllers: {
     registrations: "user/registrations",
     sessions: 'user/sessions'
